@@ -49,7 +49,7 @@ if submitted and user_input:
 # If we have a pending message, get bot response
 if st.session_state.pending_user_input:
     session_id = str(uuid.uuid4())
-    session = boto3.Session(profile_name="test-user")
+    session = boto3.Session()
     agent_client = session.client("bedrock-agent-runtime", region_name='us-east-1')
 
     user_input = st.session_state.pending_user_input
