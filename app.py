@@ -17,8 +17,8 @@ def qry_kb(agent_client, session_id, qry):
             agent_response += chunk
     return agent_response
 
-st.set_page_config(page_title="Simple Chatbot", page_icon="🤖")
-st.title("🤖 Simple Chatbot UI")
+st.set_page_config(page_title="FantasyGPT", page_icon="🤖")
+st.title("🤖 FantasyGPT")
 
 # Initialize session state
 if "messages" not in st.session_state:
